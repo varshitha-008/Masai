@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #main{
+        width:50%;
+        height: 80vh;
+        display: grid;
+        border:2px solid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+gap:5px;
+grid-template-areas: "b4 b4 b6"
+                     "b1 b5 b6";
+
+    }
+
+    #main>div:nth-of-type(1){
+        /* width:100px; */
+        /* height: 100px; */
+        /* border:2px solid; */
+        background-color: red;
+        grid-area: b1;
+    }
+    #main>div:nth-of-type(2){
+        /* width:100px; */
+        /* height: 100px; */
+        background-color:purple;
+        grid-area: b2;
+    }
+    #main>div:nth-of-type(3){
+        /* width:100px; */
+        /* height: 100px; */
+        background-color: yellowgreen;
+        /* grid-area: 2/2/3/3; */
+        grid-area:b3;
+    }
+    #main>div:nth-of-type(4){
+        /* width:100px;
+        height: 100px; */
+        background-color: brown;
+        grid-area: b4;
+    }
+    #main>div:nth-of-type(5){
+        /* width:100px;
+        height: 100px; */
+        background-color:black;
+        grid-area: b5;
+    }
+    #main>div:nth-of-type(6){
+        /* width:100px;
+        height: 100px; */
+        background-color: chocolate;
+        grid-area: b6;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+          
+</body>
+</html>
