@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion 2024</title>
+</head>
+<body>
+    <form action="" method="get" class="info">
+    <div class="info">
+        <div>
+           <label for="name">Name</label> 
+           <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+        </div>
+    </div>
+
+  <div class="info" style="width: 200px;">
+    <fieldset>
+    <legend>Select type of attendee</legend>
+    <div>
+        <input type="radio" name="attendee" id="prof" required>
+        <label for="prof">Professional</label>
+    </div>
+    <div>
+        <input type="radio" name="attendee" id="student" required>
+        <label for="student">Student</label>
+    </div>
+    <div>
+        <input type="radio" name="attendee" id="enthusiast" required>
+        <label for="enthusiast">Enthusiast</label>
+    </div>
+</fieldset>
+  </div>
+
+  <div class="info">
+      <label for="domain">Domain</label>
+        <select name="domain" id="domain" required>
+            <option value="">--select domain--</option>
+        <option value="Web Development
+        ">Web Development
+    </option>
+        <option value="Data Science
+        ">Data Science
+    </option>
+        <option value="Cloud Computing
+        ">Cloud Computing
+    </option>
+        <option value="Artificial Intelligence
+        ">Artificial Intelligence
+    </option>
+        <option value="Cybersecurity
+        ">Cybersecurity
+    </option>
+    </select>
+  </div>
+
+  <div class="info" style="width: 300px;">
+    <fieldset >
+        <legend>select workshop</legend>
+        <div>
+            <input type="checkbox" name="intro" id="intro" >
+            <label for="intro">Intro to Quantum Computing</label>
+        </div>
+        <div>
+            <input type="checkbox" name="virtual" id="virtual" >
+            <label for="virtual">Virtual Reality on the Web</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Cybersecurity" id="Cybersecurity" >
+            <label for="Cybersecurity">Cybersecurity 101</label>
+        </div>
+        <div>
+            <input type="checkbox" name="ai" id="ai" >
+            <label for="ai">AI in Medical Imaging</label>
+        </div>
+        
+        
+    </fieldset>
+  </div>
+  <div class="info">
+    <label for="day">Select Day</label>
+    <br>
+    <label>
+        <input type="checkbox" name="day"> Day 1
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="day"> Day 2
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="day"> Day 3
+    </label>    
+
+  </div>
+
+
+   <div class="info" style="width: 200px;">
+     <fieldset>
+     <legend>Select Meal</legend>
+     <div>
+        <input type="radio" name="meal" id="meal" required>
+        <label for="meal">Vegetarian</label>
+     </div>
+     <div>
+        <input type="radio" name="meal" id="meal" required>
+        <label for="meal">Non-Vegetarian
+        </label>
+     </div>
+     <div>
+        <input type="radio" name="meal" id="meal" required>
+        <label for="meal">Vegan</label>
+     </div>
+     <div>
+        <input type="radio" name="meal" id="meal" required>
+        <label for="meal">No Preference
+        </label>
+     </div>
+    </fieldset>
+   </div>
+
+   <div class="info">
+    <input type="checkbox" name="terms" id="terms" >
+    <label for="terms">I agree to the terms and conditions</label>
+   </div>
+
+   <div class="info" >
+    <input style="background-color: red;" type="submit" value="Submit">
+   </div>
+</form>
+</body>
+</html>
